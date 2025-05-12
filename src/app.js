@@ -15,12 +15,7 @@ const {checkOverload} = require('./helpers/check.connect');
 checkOverload();
 
 // init routers
-app.get('/', function (req, res) {
-  return res.status(200).json({
-    message: 'Welcome to the Workspace',
-  })
-})
-
+app.use('/', require('./routers'));
 // handling error
 
 module.exports = app;
