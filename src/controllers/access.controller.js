@@ -3,7 +3,7 @@
 class AccessController {
   signUp = async (req, res, next) => {
     try {
-      console.log("signup");
+      console.log("signup controller");
       return res.status(201).json({
         code: "20001",
         metadata: { userId: 1 },
